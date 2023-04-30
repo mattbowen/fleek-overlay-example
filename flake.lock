@@ -1,5 +1,41 @@
 {
   "nodes": {
+    "emacs": {
+      "inputs": {
+        "flake-utils": "flake-utils",
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1682871454,
+        "narHash": "sha256-NiozRbgHVHg5WXmcQVOABzKGTVgsLPE2k9VTudd+LoY=",
+        "owner": "nix-community",
+        "repo": "emacs-overlay",
+        "rev": "ff0f8af5d4f511adf3a3252d1c09bfdc1912e8c6",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nix-community",
+        "repo": "emacs-overlay",
+        "type": "github"
+      }
+    },
+    "flake-utils": {
+      "locked": {
+        "lastModified": 1667395993,
+        "narHash": "sha256-nuEHfE/LcWyuSWnS8t12N1wc105Qtau+/OdUAjtQ0rA=",
+        "owner": "numtide",
+        "repo": "flake-utils",
+        "rev": "5aed5285a952e0b949eb3ba02c12fa4fcfef535f",
+        "type": "github"
+      },
+      "original": {
+        "owner": "numtide",
+        "repo": "flake-utils",
+        "type": "github"
+      }
+    },
     "fleek": {
       "inputs": {
         "nixpkgs": "nixpkgs"
@@ -72,6 +108,7 @@
     },
     "root": {
       "inputs": {
+        "emacs": "emacs",
         "fleek": "fleek",
         "home-manager": "home-manager",
         "nixpkgs": "nixpkgs_2"

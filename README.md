@@ -18,4 +18,6 @@ $ apply-{hostname}
 ```
 
 Your actual aliases are listed below:
+    apply-fedora = "nix run --impure home-manager/master -- -b bak switch --flake .#matt@fedora";
+
     fleeks = "cd ~/.local/share/fleek";
