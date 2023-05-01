@@ -1,4 +1,5 @@
 {
+  # DO NOT EDIT: This file is managed by fleek. Manual changes will be overwritten.
   description = "Fleek Configuration";
 
   inputs = {
@@ -9,16 +10,12 @@
     home-manager.url = "github:nix-community/home-manager";
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
 
-    # Emacs Overlay
-    emacs.url = "github:nix-community/emacs-overlay";
-    emacs.inputs.nixpkgs.follows = "nixpkgs";
-
     # Fleek
     fleek.url = "github:ublue-os/fleek";
 
   };
 
-  outputs = { nixpkgs, home-manager, emacs, fleek, ... }@inputs: {
+  outputs = { nixpkgs, home-manager, fleek, ... }@inputs: {
 
     # Available through 'home-manager --flake .#your-username@your-hostname'
     homeConfigurations = {
